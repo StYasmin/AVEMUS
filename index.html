@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AVEMUS - Asociación Valenciana d'Estudiants Musulmans">
+    <title>AVEMUS - Associació Valenciana d'Estudiants Musulmans</title>
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="AVEMUS Logo">
+                <div>
+                    <h1>AVEMUS</h1>
+                    <p class="subtitle">Associació Valenciana d'Estudiants Musulmans</p>
+                </div>
+            </div>
+             <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="eventos.html">Eventos</a></li> <!-- Sin Juevemus separado -->
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="mobile-menu" onclick="toggleMenu()"> <!-- barritas de menú para versión móvil -->
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <!-- Elementos flotantes animados -->
+        <div class="floating-elements">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+        </div> 
+        
+        <!-- Patrón geométrico de fondo -->
+        <div class="geometric-pattern"></div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Associació Valenciana d'Estudiants Musulmans</h1>
+                <div class="hero-description">
+                    <p>Somos una comunidad de jóvenes musulmanes valencianos dedicados a la defensa de derechos, la lucha contra la discriminación y la promoción de nuestra identidad islámica en el ámbito universitario.</p>
+                    <p>Creamos espacios de encuentro, diálogo y crecimiento personal donde cada miembro puede desarrollarse académica y espiritualmente mientras fortalece los lazos de hermandad con la comunidad.</p>
+                </div>
+                <a href="sobre-nosotros.html" class="cta-button">
+                    <span>Conoce Más</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <!-- Ilustración animada mejorada -->
+            <div class="hero-illustration">
+                <div class="illustration-container">
+                    <!-- Elementos de conexión -->
+                    <div class="connection-lines">
+                        <div class="connection-line line-1"></div>
+                        <div class="connection-line line-2"></div>
+                        <div class="connection-line line-3"></div>
+                    </div>
+                    
+                    <!-- Representación de estudiantes conectados -->
+                    <div class="students-network">
+                        <div class="student-node node-1">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="student-node node-2">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="student-node node-3">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="student-node node-4">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="student-node node-5">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        
+                        <!-- Centro con logo AVEMUS -->
+                        <div class="central-hub">
+                            <img src="images/logo.jpg" alt="AVEMUS">
+                            <div class="pulse-ring"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="eventos" class="section events">
+        <div class="container">
+            <div class="section-title">
+                <h2>Últimos eventos</h2>
+                <p>Síguenos en Instagram para más contenido y actualizaciones</p>
+            </div>
+    
+            <div class="instagram-feed">
+                <div class="instagram-post">
+                    <div class="post-image">
+                        <blockquote class="instagram-media" 
+                            data-instgrm-permalink="https://www.instagram.com/p/DKwcMAcN4Ds/"
+                            data-instgrm-version="14">
+                        </blockquote>
+                    </div>
+                    <div class="post-content">
+                        <h3>Paellas AVEMUS</h3>
+                        <p>Poniendo a prueba nuestras habilidades culinarias...</p>
+                        <a href="https://www.instagram.com/p/DKwcMAcN4Ds/" target="_blank" class="instagram-link">
+                            <i class="fab fa-instagram"></i>
+                            Ver en Instagram
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="instagram-post">
+                    <div class="post-image">
+                        <blockquote class="instagram-media" 
+                            data-instgrm-permalink="https://www.instagram.com/reel/DHjZrhUNDoo/"
+                            data-instgrm-version="14">
+                        </blockquote>
+                    </div>
+                    <div class="post-content">
+                        <h3>Iftar Ramadan 2025</h3>
+                        <p>Celebrando la hermandad en la universidad...</p>
+                        <a href="https://www.instagram.com/reel/DHjZrhUNDoo/" target="_blank" class="instagram-link">
+                            <i class="fab fa-instagram"></i>
+                            Ver en Instagram
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="instagram-post">
+                    <div class="post-image">
+                        <blockquote class="instagram-media" 
+                            data-instgrm-permalink="https://www.instagram.com/p/DBRyTmLK6lA/"
+                            data-instgrm-version="14">
+                        </blockquote>
+                    </div>
+                    <div class="post-content">
+                        <h3>Podcast presencial "Ciencia & Islam"</h3>
+                        <p>Aprendiendo juntos sobre nuestra cultura...</p>
+                        <a href="https://www.instagram.com/p/DBRyTmLK6lA/" target="_blank" class="instagram-link">
+                            <i class="fab fa-instagram"></i>
+                            Ver en Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="instagram-cta">
+                <a href="https://www.instagram.com/avemusulmans/" target="_blank" class="follow-instagram">
+                    <i class="fab fa-instagram"></i>
+                    Síguenos en Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is AVEMUS Section -->
+    <section class="section what-is-avemus">
+        <div class="container">
+            <div class="what-is-content">
+                <div class="what-is-text">
+                    <div class="section-title">
+                        <h2>¿Qué es AVEMUS?</h2>
+                        <p>Conoce nuestra comunidad y únete a nosotros</p>
+                    </div>
+                    
+                    <div class="avemus-description">
+                        <div class="intro-text">
+                            <p>AVEMUS es una organización comprometida con la comunidad universitaria musulmana valenciana. Fomentamos una comunidad unida que trabaja por el bien común, apoya a los más jóvenes y genera espacios de diálogo y aprendizaje.</p>
+                        </div>
+                        
+                        <div class="mission-section">
+                            <h3>Nuestra Misión</h3>
+                            <p>Crear una comunidad unida que eduque sobre el islam y genere espacios de diálogo, aprendizaje y ocio, siempre manteniendo nuestros valores y principios islámicos.</p>
+                        </div>
+                        
+                        <div class="quick-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Miembros Activos</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Eventos Anuales</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">2+</div>
+                                <div class="stat-label">Universidades</div>
+                            </div>
+                        </div>
+                        
+                        <a href="contacto.html" class="join-button">
+                            <i class="fas fa-users"></i>
+                            <span>Únete a Nosotros</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="what-is-visual">
+                    <div class="modern-illustration">
+                        <div class="community-hub">
+                            <div class="central-circle">
+                                <img src="images/logo.jpg" alt="AVEMUS Logo">
+                                <div class="orbit-ring ring-1"></div>
+                                <div class="orbit-ring ring-2"></div>
+                            </div>
+                            
+                            <div class="value-nodes">
+                                <div class="value-node vnode-1" data-tooltip="Hermandad">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div class="value-node vnode-2" data-tooltip="Educación">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="value-node vnode-3" data-tooltip="Compromiso">
+                                    <i class="fas fa-fist-raised"></i>
+                                </div>
+                                <div class="value-node vnode-4" data-tooltip="Diálogo">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="value-node vnode-5" data-tooltip="Respeto">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="value-node vnode-6" data-tooltip="Transparencia">
+                                    <i class="fas fa-eye"></i>
+                                </div>
+                            </div>
+                            
+                            <div class="connecting-lines">
+                                <div class="connect-line line-1"></div>
+                                <div class="connect-line line-2"></div>
+                                <div class="connect-line line-3"></div>
+                                <div class="connect-line line-4"></div>
+                                <div class="connect-line line-5"></div>
+                                <div class="connect-line line-6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.jpg" alt="AVEMUS Logo">
+                    <p>AVEMUS - Asociación Valenciana d'Estudiants Musulmans</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="eventos.html">Eventos</a></li> <!-- Sin Juevemus separado -->
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> avemusulmans@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> València, Comunitat Valenciana</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AVEMUS. Todos los derechos reservados.</p>
+                <p>Unidos por la fe, comprometidos con el futuro.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+
+</body>
+</html>

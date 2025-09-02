@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galería AVEMUS - Fotos y videos de nuestros eventos y actividades.">
+    <meta name="keywords" content="AVEMUS, galería, fotos, videos, eventos, estudiantes musulmanes, Valencia">
+    <title>Galería - AVEMUS</title>
+    
+    <!-- Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="AVEMUS Logo">
+                <div>
+                    <h1>AVEMUS</h1>
+                    <p class="subtitle">Associació Valenciana d'Estudiants Musulmans</p>
+                </div>
+            </div>
+             <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="eventos.html">Eventos</a></li> <!-- Sin Juevemus separado -->
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="mobile-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero galeria-hero">
+        <div class="hero-decorations">
+            <div class="floating-element float-1"></div>
+            <div class="floating-element float-2"></div>
+            <div class="floating-element float-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Nuestra Galería</h1>
+            <p>Revive los mejores momentos de nuestra comunidad a través de imágenes y videos</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="section gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i>
+                    Todo
+                </button>
+                <button class="filter-btn" data-filter="eventos">
+                    <i class="fas fa-calendar-alt"></i>
+                    Eventos
+                </button>
+                <button class="filter-btn" data-filter="juevemus">
+                    <i class="fas fa-users"></i>
+                    Juevemus
+                </button>
+                <button class="filter-btn" data-filter="actividades">
+                    <i class="fas fa-gamepad"></i>
+                    Actividades
+                </button>
+                <button class="filter-btn" data-filter="videos">
+                    <i class="fas fa-video"></i>
+                    Videos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section gallery-content">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                
+                <!-- Eventos -->
+                <div class="gallery-item" data-category="eventos">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/paellas-1.jpg" alt="Paellas AVEMUS">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Paellas AVEMUS</h4>
+                                    <p>Enero 2025</p>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="view-btn" onclick="openModal('paellas-1.jpg')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <a href="https://www.instagram.com/p/DKwcMAcN4Ds/" target="_blank" class="instagram-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="eventos">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/iftar-2024.jpg" alt="Iftar Ramadán">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Iftar Ramadán</h4>
+                                    <p>Diciembre 2024</p>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="view-btn" onclick="openModal('iftar-2024.jpg')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <a href="https://www.instagram.com/reel/DHjZrhUNDoo/" target="_blank" class="instagram-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="eventos">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/podcast-presencial.jpg" alt="Podcast Ciencia & Islam">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Podcast "Ciencia & Islam"</h4>
+                                    <p>Noviembre 2024</p>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="view-btn" onclick="openModal('podcast-presencial.jpg')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                    <a href="https://www.instagram.com/p/DBRyTmLK6lA/" target="_blank" class="instagram-btn">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Juevemus -->
+                <div class="gallery-item" data-category="juevemus">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/juevemus-debate.jpg" alt="Debate Juevemus">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Debate: Sostenibilidad</h4>
+                                    <p>Febrero 2025</p>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="view-btn" onclick="openModal('juevemus-debate.jpg')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="juevemus">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/juevemus-juegos.jpg" alt="Noche de Juegos">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Noche de Juegos</h4>
+                                    <p>Enero 2025</p>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="view-btn" onclick="openModal('juevemus-juegos.jpg')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actividades -->
+                <div class="gallery-item" data-category="actividades">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/excursion-grupo.jpg" alt="Excursión Grupo">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Excursión de Grupo</h4>
+                                    <p>Octubre 2024</p>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="view-btn" onclick="openModal('excursion-grupo.jpg')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="actividades">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/taller-caligrafia.jpg" alt="Taller de Caligrafía">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Taller de Caligrafía</h4>
+                                    <p>Septiembre 2024</p>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="view-btn" onclick="openModal('taller-caligrafia.jpg')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Videos -->
+                <div class="gallery-item" data-category="videos">
+                    <div class="gallery-card video-card">
+                        <div class="gallery-video">
+                            <video poster="images/gallery/video-thumbnail-1.jpg" controls>
+                                <source src="videos/avemus-presentacion.mp4" type="video/mp4">
+                                Tu navegador no soporta videos.
+                            </video>
+                            <div class="video-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Presentación AVEMUS</h4>
+                            <p>¿Quiénes somos y qué hacemos?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="videos">
+                    <div class="gallery-card video-card">
+                        <div class="gallery-video">
+                            <video poster="images/gallery/video-thumbnail-2.jpg" controls>
+                                <source src="videos/highlights-2024.mp4" type="video/mp4">
+                                Tu navegador no soporta videos.
+                            </video>
+                            <div class="video-overlay">
+                                <div class="play-button">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h4>Highlights 2024</h4>
+                            <p>Los mejores momentos del año</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Más elementos de ejemplo -->
+                <div class="gallery-item" data-category="eventos">
+                    <div class="gallery-card">
+                        <div class="gallery-image">
+                            <img src="images/gallery/conferencia-islam.jpg" alt="Conferencia Islam Moderno">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h4>Conferencia Islam Moderno</h4>
+                                    <p>Agosto 2024</p>
+                                </div>
+                                <div class="gallery-actions">
+                                    <button class="view-btn" onclick="openModal('conferencia-islam.jpg')">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder para futuras fotos -->
+                <div class="gallery-item placeholder" data-category="eventos">
+                    <div class="gallery-card">
+                        <div class="placeholder-content">
+                            <i class="fas fa-camera"></i>
+                            <h4>Próximo Evento</h4>
+                            <p>¡Pronto más fotos!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section">
+                <button class="load-more-btn" onclick="loadMoreItems()">
+                    <i class="fas fa-plus"></i>
+                    Cargar Más
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para ver imágenes -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-image" id="modalImage">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram Feed Section -->
+    <section class="section instagram-section">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fab fa-instagram"></i> Síguenos en Instagram</h2>
+                <p>Mantente al día con todo nuestro contenido visual</p>
+            </div>
+            
+            <div class="instagram-embed">
+                <blockquote class="instagram-media" 
+                    data-instgrm-permalink="https://www.instagram.com/avemusulmans/"
+                    data-instgrm-version="14">
+                </blockquote>
+            </div>
+            
+            <div class="instagram-cta">
+                <a href="https://www.instagram.com/avemusulmans/" target="_blank" class="follow-instagram">
+                    <i class="fab fa-instagram"></i>
+                    Síguenos para más contenido
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.jpg" alt="AVEMUS Logo">
+                    <p>AVEMUS - Asociación Valenciana d'Estudiants Musulmans</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="eventos.html">Eventos</a></li> <!-- Sin Juevemus separado -->
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> avemusulmans@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> València, Comunitat Valenciana</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AVEMUS. Todos los derechos reservados.</p>
+                <p>Unidos por la fe, comprometidos con el futuro.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>

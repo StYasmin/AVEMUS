@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Proyectos AVEMUS - Iniciativas para mejorar la vida universitaria musulmana en Valencia.">
+    <meta name="keywords" content="AVEMUS, proyectos, sala rezo, universidad, estudiantes musulmanes, Valencia">
+    <title>Proyectos - AVEMUS</title>
+
+    <!-- Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="AVEMUS Logo">
+                <div>
+                    <h1>AVEMUS</h1>
+                    <p class="subtitle">Asosciació Valenciana d'Estudiants Musulmans</p>
+                </div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="eventos.html">Eventos</a></li> <!-- Sin Juevemus separado -->
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="mobile-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero proyectos-hero">
+        <div class="hero-decorations">
+            <div class="floating-element float-1"></div>
+            <div class="floating-element float-2"></div>
+            <div class="floating-element float-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Nuestros Proyectos</h1>
+            <p>Iniciativas que transforman la experiencia universitaria musulmana en Valencia</p>
+        </div>
+    </section>
+
+    <!-- Proyectos Activos -->
+    <section class="section active-projects">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-rocket"></i> Proyectos Activos</h2>
+                <p>Iniciativas en curso que están marcando la diferencia</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Sala de Rezo -->
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <div class="project-status active">
+                            <span class="status-badge">En Desarrollo</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sala de Rezo Universitaria</h3>
+                        <p>Trabajamos para establecer espacios dedicados al rezo en los campus universitarios,
+                            proporcionando un lugar digno y accesible para la práctica religiosa de estudiantes
+                            musulmanes.</p>
+
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Universidad de Valencia y UPV</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>Beneficia a 200+ estudiantes</span>
+                            </div>
+                        </div>
+
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                            <span class="progress-text">65% completado</span>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="#contact" class="btn-primary">Apoyar Proyecto</a>
+                            <a href="#" class="btn-secondary">Más Info</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campaña de Concienciación -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="project-status active">
+                            <span class="status-badge">Activo</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Campaña de Concienciación</h3>
+                        <p>Iniciativa educativa para promover la comprensión del Islam, combatir estereotipos y fomentar
+                            el diálogo intercultural en el ámbito universitario.</p>
+
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Marzo - Junio 2025</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>5 universidades</span>
+                            </div>
+                        </div>
+
+                        <div class="campaign-stats">
+                            <div class="stat">
+                                <div class="stat-number">1,200+</div>
+                                <div class="stat-label">Estudiantes alcanzados</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">8</div>
+                                <div class="stat-label">Charlas realizadas</div>
+                            </div>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="https://forms.gle/example" target="_blank" class="btn-primary">
+                                <i class="fas fa-clipboard-list"></i>
+                                Participar
+                            </a>
+                            <a href="#" class="btn-secondary">Ver Resultados</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colaboraciones -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="project-status active">
+                            <span class="status-badge">Permanente</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Colaboraciones Interasociaciones</h3>
+                        <p>Establecemos alianzas con otras asociaciones estudiantiles para crear eventos conjuntos,
+                            intercambios culturales y fortalecer la diversidad universitaria.</p>
+
+                        <div class="partners-list">
+                            <div class="partner-item">
+                                <i class="fas fa-globe"></i>
+                                <span>Asociaciones Culturales</span>
+                            </div>
+                            <div class="partner-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Consejos de Estudiantes</span>
+                            </div>
+                            <div class="partner-item">
+                                <i class="fas fa-dove"></i>
+                                <span>ONGs y Fundaciones</span>
+                            </div>
+                        </div>
+
+                        <div class="collaboration-highlights">
+                            <h4>Próximas Colaboraciones:</h4>
+                            <ul>
+                                <li>Semana Intercultural (Abril 2025)</li>
+                                <li>Foro de Diversidad Religiosa</li>
+                                <li>Proyecto Solidario Ramadán</li>
+                            </ul>
+                        </div>
+
+                        <div class="project-actions">
+                            <a href="contacto.html" class="btn-primary">Colaborar</a>
+                            <a href="#" class="btn-secondary">Ver Alianzas</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Futuros -->
+    <section class="section future-projects">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-lightbulb"></i> Proyectos Futuros</h2>
+                <p>Ideas e iniciativas que queremos desarrollar próximamente</p>
+            </div>
+
+            <div class="future-projects-grid">
+                <div class="future-project-card">
+                    <div class="future-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h4>Centro de Recursos Islámicos</h4>
+                    <p>Biblioteca digital y física con literatura islámica, textos académicos y recursos educativos.</p>
+                </div>
+
+                <div class="future-project-card">
+                    <div class="future-icon">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <h4>Podcast "Voces Musulmanas"</h4>
+                    <p>Serie de entrevistas con profesionales musulmanes que inspiran a la nueva generación.</p>
+                </div>
+
+                <div class="future-project-card">
+                    <div class="future-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Programa de Mentorías</h4>
+                    <p>Red de apoyo entre estudiantes veteranos y nuevos miembros de la comunidad.</p>
+                </div>
+
+                <div class="future-project-card">
+                    <div class="future-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h4>Iniciativa Verde Halal</h4>
+                    <p>Proyectos de sostenibilidad y conciencia ambiental desde la perspectiva islámica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impacto -->
+    <section class="section project-impact">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-chart-line"></i> Nuestro Impacto</h2>
+                <p>Los resultados tangibles de nuestros proyectos en la comunidad</p>
+            </div>
+
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="impact-number">500+</div>
+                    <div class="impact-label">Estudiantes Beneficiados</div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="impact-number">5</div>
+                    <div class="impact-label">Universidades Colaboradoras</div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="impact-number">12</div>
+                    <div class="impact-label">Asociaciones Aliadas</div>
+                </div>
+
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="impact-number">3</div>
+                    <div class="impact-label">Proyectos Completados</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section projects-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Tienes una idea de proyecto?</h2>
+                <p>Estamos siempre abiertos a nuevas propuestas e iniciativas que beneficien a nuestra comunidad</p>
+                <div class="cta-buttons">
+                    <a href="contacto.html" class="cta-button primary">
+                        <i class="fas fa-lightbulb"></i>
+                        Proponer Idea
+                    </a>
+                    <a href="contacto.html" class="cta-button secondary">
+                        <i class="fas fa-volunteer"></i>
+                        Ser Voluntario
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.jpg" alt="AVEMUS Logo">
+                    <p>AVEMUS - Asociación Valenciana d'Estudiants Musulmans</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="eventos.html">Eventos</a></li> <!-- Sin Juevemus separado -->
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> avemusulmans@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> València, Comunitat Valenciana</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AVEMUS. Todos los derechos reservados.</p>
+                <p>Unidos por la fe, comprometidos con el futuro.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

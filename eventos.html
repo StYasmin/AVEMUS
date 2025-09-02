@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eventos AVEMUS - Conoce nuestros eventos pasados y próximos. Únete a nuestra comunidad universitaria musulmana.">
+    <meta name="keywords" content="AVEMUS, eventos, estudiantes musulmanes, Valencia, universidad, actividades">
+    <title>Eventos - AVEMUS</title>
+    
+    <!-- Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.jpg">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="AVEMUS Logo">
+                <div>
+                    <h1>AVEMUS</h1>
+                    <p class="subtitle">Associació Valenciana d'Estudiants Musulmans</p>
+                </div>
+            </div>
+             <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a href="eventos.html">Eventos</a></li> <!-- Sin Juevemus separado -->
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <button class="mobile-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero events-hero">
+        <div class="hero-decorations">
+            <div class="floating-element float-1"></div>
+            <div class="floating-element float-2"></div>
+            <div class="floating-element float-3"></div>
+        </div>
+    
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Eventos y Actividades</h1>
+                <div class="hero-description">
+                    <p>Descubre todas nuestras actividades: desde eventos especiales hasta nuestras quedadas semanales
+                        Juevemus.</p>
+                    <p>Un calendario completo de encuentros, aprendizaje y hermandad universitaria.</p>
+                </div>
+                <div class="hero-info">
+                    <div class="info-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Eventos Mensuales</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <span>Juevemus</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-heart"></i>
+                        <span>Comunidad Activa</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximos Eventos -->
+    <section class="section upcoming-events">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-calendar-plus"></i> Próximos Eventos</h2>
+                <p>Eventos que se avecinan - ¡No te los pierdas!</p>
+            </div>
+
+            <!-- GUÍA PARA ACTUALIZAR: 
+                 1. Copia el bloque .event-card completo
+                 2. Actualiza la fecha en .event-date
+                 3. Cambia el título en .event-title
+                 4. Modifica la descripción en .event-description
+                 5. Actualiza la ubicación en .event-location
+                 6. Cambia el icono si es necesario (fas fa-users, fas fa-graduation-cap, fas fa-utensils, etc.)
+            -->
+            
+            <div class="events-grid">
+                <!-- Evento de ejemplo - REEMPLAZAR -->
+                <div class="event-card upcoming">
+                    <div class="event-date">
+                        <div class="date-day">15</div>
+                        <div class="date-month">MAR</div>
+                        <div class="date-year">2025</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="event-image">
+                            <img src="images/events/[nombre-evento].jpg" alt="[Título del evento]">
+                        </div>
+                        <h3 class="event-title">Charla: "Islam y Ciencia Moderna"</h3>
+                        <p class="event-description">Conferencia magistral sobre la relación entre la fe islámica y los avances científicos contemporáneos. Invitados especiales del ámbito académico.</p>
+                        <div class="event-details">
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Aula Magna - Universidad de Valencia</span>
+                            </div>
+                            <div class="event-time">
+                                <i class="fas fa-clock"></i>
+                                <span>18:00 - 20:00</span>
+                            </div>
+                        </div>
+                        <div class="event-status">
+                            <span class="status-badge upcoming-badge">Próximo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Plantilla para copiar - BORRAR ESTE COMENTARIO AL ACTUALIZAR -->
+                <div class="event-card upcoming">
+                    <div class="event-date">
+                        <div class="date-day">22</div>
+                        <div class="date-month">MAR</div>
+                        <div class="date-year">2025</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="event-image">
+                            <img src="images/events/[nombre-evento].jpg" alt="[Título del evento]">
+                        </div>
+                        <h3 class="event-title">Cena Comunitaria de Primavera</h3>
+                        <p class="event-description">Encuentro gastronómico para fortalecer los lazos entre los miembros de la comunidad. Platos tradicionales y momentos de convivencia.</p>
+                        <div class="event-details">
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Salón de Actos - UPV</span>
+                            </div>
+                            <div class="event-time">
+                                <i class="fas fa-clock"></i>
+                                <span>19:30 - 22:00</span>
+                            </div>
+                        </div>
+                        <div class="event-status">
+                            <span class="status-badge upcoming-badge">Próximo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mensaje cuando no hay próximos eventos -->
+            <!-- <div class="no-events">
+                <i class="fas fa-calendar-times"></i>
+                <h3>No hay próximos eventos programados</h3>
+                <p>Mantente atento a nuestras redes sociales para conocer las próximas actividades</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Después de los eventos, añade Juevemus como sección -->
+    <section class="section juevemus-section">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-calendar-week"></i> Juevemus - Quedadas Semanales</h2>
+                <p>Nuestros encuentros todos los jueves para fortalecer la hermandad</p>
+            </div>
+    
+            <!-- Contenido de Juevemus aquí -->
+            <div class="juevemus-info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Encuentro Semanal</h3>
+                    <p>Cada jueves nos reunimos para compartir experiencias y fortalecer los lazos de hermandad.</p>
+                </div>
+                <!-- Más cards... -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Eventos Pasados -->
+    <section class="section past-events">
+        <div class="container">
+            <div class="section-title">
+                <h2><i class="fas fa-history"></i> Eventos Pasados</h2>
+                <p>Revive los momentos especiales que hemos compartido</p>
+            </div>
+
+            <div class="events-grid">
+                <!-- Paellas AVEMUS -->
+                <div class="event-card past">
+                    <div class="event-date">
+                        <div class="date-day">10</div>
+                        <div class="date-month">ENE</div>
+                        <div class="date-year">2025</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="event-image">
+                            <img src="images/events/[nombre-evento].jpg" alt="[Título del evento]">
+                        </div>
+                        <h3 class="event-title">Paellas AVEMUS</h3>
+                        <p class="event-description">Una jornada culinaria donde pusimos a prueba nuestras habilidades cocinando paellas tradicionales. Un evento que combinó gastronomía, diversión y hermandad entre nuestros miembros.</p>
+                        <div class="event-details">
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Parque Natural - Valencia</span>
+                            </div>
+                            <div class="event-time">
+                                <i class="fas fa-clock"></i>
+                                <span>12:00 - 17:00</span>
+                            </div>
+                        </div>
+                        <div class="event-status">
+                            <span class="status-badge past-badge">Finalizado</span>
+                        </div>
+                        <div class="event-social">
+                            <a href="https://www.instagram.com/p/DKwcMAcN4Ds/" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                Ver en Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Iftar Ramadan 2024 -->
+                <div class="event-card past">
+                    <div class="event-date">
+                        <div class="date-day">20</div>
+                        <div class="date-month">DIC</div>
+                        <div class="date-year">2024</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-icon">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <div class="event-image">
+                            <img src="images/events/[nombre-evento].jpg" alt="[Título del evento]">
+                        </div>
+                        <h3 class="event-title">Iftar Ramadán 2024</h3>
+                        <p class="event-description">Celebración del iftar comunitario durante el mes sagrado de Ramadán. Un momento especial para compartir la ruptura del ayuno en hermandad y reflexionar sobre nuestros valores.</p>
+                        <div class="event-details">
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Centro Islámico - Valencia</span>
+                            </div>
+                            <div class="event-time">
+                                <i class="fas fa-clock"></i>
+                                <span>19:00 - 22:00</span>
+                            </div>
+                        </div>
+                        <div class="event-status">
+                            <span class="status-badge past-badge">Finalizado</span>
+                        </div>
+                        <div class="event-social">
+                            <a href="https://www.instagram.com/reel/DHjZrhUNDoo/" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                Ver en Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Podcast Ciencia & Islam -->
+                <div class="event-card past">
+                    <div class="event-date">
+                        <div class="date-day">15</div>
+                        <div class="date-month">NOV</div>
+                        <div class="date-year">2024</div>
+                    </div>
+                    <div class="event-content">
+                        <div class="event-icon">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <div class="event-image">
+                            <img src="images/events/[nombre-evento].jpg" alt="[Título del evento]">
+                        </div>
+                        <h3 class="event-title">Podcast Presencial "Ciencia & Islam"</h3>
+                        <p class="event-description">Sesión presencial de nuestro podcast donde exploramos la fascinante relación entre los avances científicos y la perspectiva islámica. Una conversación enriquecedora con invitados expertos.</p>
+                        <div class="event-details">
+                            <div class="event-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Aula de Conferencias - UV</span>
+                            </div>
+                            <div class="event-time">
+                                <i class="fas fa-clock"></i>
+                                <span>17:00 - 19:00</span>
+                            </div>
+                        </div>
+                        <div class="event-status">
+                            <span class="status-badge past-badge">Finalizado</span>
+                        </div>
+                        <div class="event-social">
+                            <a href="https://www.instagram.com/p/DBRyTmLK6lA/" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                                Ver en Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section events-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Quieres participar en nuestros próximos eventos?</h2>
+                <p>Únete a nuestra comunidad y mantente informado sobre todas nuestras actividades</p>
+                <div class="cta-buttons">
+                    <a href="contacto.html" class="cta-button primary">
+                        <i class="fas fa-users"></i>
+                        Únete a Nosotros
+                    </a>
+                    <a href="https://www.instagram.com/avemusulmans/" target="_blank" class="cta-button secondary">
+                        <i class="fab fa-instagram"></i>
+                        Síguenos en Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.jpg" alt="AVEMUS Logo">
+                    <p>AVEMUS - Asociación Valenciana d'Estudiants Musulmans</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="eventos.html">Eventos</a></li> <!-- Sin Juevemus separado -->
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> avemusulmans@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> València, Comunitat Valenciana</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AVEMUS. Todos los derechos reservados.</p>
+                <p>Unidos por la fe, comprometidos con el futuro.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
